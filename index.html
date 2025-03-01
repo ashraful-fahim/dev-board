@@ -39,38 +39,152 @@
             </div>
         </nav>
     </header>
-    <main>
-        <!-- boxes section -->
-        <section class="grid grid-cols-3">
-            <!-- task Box -->
-            <div class="box flex gap-6 items-center bg-transparent p-4 rounded-lg">
-                <div class="border-white bg-white rounded-full p-3">
-                    <img src="./assets/checkbox.png" alt="">
+    <main class="bg-[#F4F7FF]">
+        <section class="bg-white rounded-lg p-6">
+            <!-- boxes section -->
+            <div class="grid grid-cols-4 gap-4 py-4">
+                <!-- task Box -->
+                <div class="flex gap-6 items-center bg-[#F4F7FF] p-4 rounded-lg">
+                    <div class="border-white bg-white rounded-full p-3">
+                        <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-sm">Task Assigned</p>
+                        <p class="text-2xl font-bold">05</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-sm">Task Assigned</p>
-                    <p class="text-2xl font-bold">05</p>
+                <!-- Design Box -->
+                <div
+                    class="col-span-2 flex items-center gap-5 p-5 bg-linear-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg">
+                    <img src="./assets/board.png" alt="">
+                    <p class="text-xl font-semibold text-white">Discover Something
+                        <br>New Today!
+                    </p>
+                </div>
+                <!-- date box -->
+                <div class="flex gap-6 rounded-lg items-center bg-[#F4F7FF] p-4">
+                    <div class="border-white bg-white rounded-full p-3">
+                        <img src="./assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xl">Day,</p>
+                        <p class="text-xl font-bold">Date</p>
+                    </div>
                 </div>
             </div>
-            <!-- Design Box -->
-            <div
-                class="flex items-center gap-5 p-5 bg-linear-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg">
-                <img src="./assets/board.png" alt="">
-                <p class="text-xl font-semibold text-white">Discover Something
-                    <br>New Today!
-                </p>
-            </div>
-            <!-- date box -->
-            <div class="flex gap-6 rounded-lg items-center bg-transparent p-4">
-                <div class="border-white bg-white rounded-full p-3">
-                    <img src="./assets/calender.png" alt="">
+            <!-- card section -->
+            <div class="grid grid-cols-3 gap-8 mt-8">
+                <!-- card-1 -->
+                <div class="w-80 p-6 space-y-4 bg-[#F4F7FF] rounded-lg">
+                    <div class="mr-44 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
+                        <p>ShopEase</p>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#00303C]">Fix Mobile Button Issue </h3>
+                    <div class="h-16 border-white bg-white p-5 rounded-lg">
+                        <p class="text-xs opacity-50 truncate ">Debug using Chrome 
+                            <br>DevTools, check for overlapping elements, and ensure
+                            onClick works properly and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
+                            <p class="text-sm font-medium text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-xl">Day,</p>
-                    <p class="text-xl font-bold">Date</p>
+                <!-- card-2 -->
+                <div class="w-80 p-6 space-y-4 bg-[#F4F7FF] rounded-lg">
+                    <div class="mr-44 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
+                        <p>CloudSync</p>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#00303C]">Add Dark Mode</h3>
+                    <div class="h-16 border-white bg-white p-5 rounded-lg">
+                        <p class="text-xs opacity-50 truncate ">Store the user's preference in 
+                        <br>localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
+                            <p class="text-sm font-medium text-[#00303C]">15 April 2025</p>
+                        </div>
+                        <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                    </div>
                 </div>
-            </div>
+                <!-- card-3 -->
+                <div class="w-80 p-6 space-y-4 bg-[#F4F7FF] rounded-lg">
+                    <div class="mr-48 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
+                        <p>SwiftPay</p>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#00303C]">Optimize  Home page</h3>
+                    <div class="h-16 border-white bg-white p-5 rounded-lg">
+                        <p class="text-xs opacity-50 truncate ">Make it accessible, mobile-optimized, 
+                            <br>SEO-friendly, visually appealing, informative, and conversion-focused with an intuitive, modern, and streamlined interface.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
+                            <p class="text-sm font-medium text-[#00303C]">30 May 2025</p>
+                        </div>
+                        <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="w-80 p-6 space-y-4 bg-[#F4F7FF] rounded-lg">
+                    <div class="mr-52 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
+                        <p>Meta</p>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#00303C]">Add new emoji 🤲</h3>
+                    <div class="h-16 border-white bg-white p-5 rounded-lg">
+                        <p class="text-xs opacity-50 truncate "> Experience more vibrant, expressive, 
+                            <br>and inclusive than ever! Connect deeper, express yourself freely, and elevate your digital conversations with emojis that speak your language.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
+                            <p class="text-sm font-medium text-[#00303C]">13 June 2025</p>
+                        </div>
+                        <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="w-80 p-6 space-y-4 bg-[#F4F7FF] rounded-lg">
+                    <div class="mr-40 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
+                        <p>Google LLC</p>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#00303C]">Integrate OpenAI API </h3>
+                    <div class="h-16 border-white bg-white p-5 rounded-lg">
+                        <p class="text-xs opacity-50 truncate ">Unlocking limitless possibilities! 
+                            <br>Supercharge your apps with cutting-edge AI, enhancing user experiences and driving innovation with powerful, intelligent solutions at your fingertips.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
+                            <p class="text-sm font-medium text-[#00303C]">30 June 2025</p>
+                        </div>
+                        <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="w-80 p-6 space-y-4 bg-[#F4F7FF] rounded-lg">
+                    <div class="mr-44 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
+                        <p>Glassdoor</p>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#00303C]">Improve Job searching </h3>
+                    <div class="h-16 border-white bg-white p-5 rounded-lg">
+                        <p class="text-xs opacity-50 truncate ">Discover new opportunities 
+                            <br>With smarter filters personalized recommendations, and in-depth company insights. Elevate your career journey with a platform designed for your success.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
+                            <p class="text-sm font-medium text-[#00303C]">21 September 2025</p>
+                        </div>
+                        <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                    </div>
+                </div>
         </section>
+
     </main>
     <footer>
 
