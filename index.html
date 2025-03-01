@@ -31,7 +31,7 @@
             <div class="flex gap-6 items-center">
                 <div class="flex items-center gap-3 border-transparent bg-[#F4F7FF] rounded-full p-3">
                     <img src="./assets/checkbox.png" alt="">
-                    <p class="text-2xl font-bold">23</p>
+                    <p id="tick-number" class="text-2xl font-bold">23</p>
                 </div>
                 <div class="border-transparent bg-[#F4F7FF] rounded-full p-3">
                     <img src="./assets/theme-btn.png" alt="">
@@ -39,12 +39,12 @@
             </div>
         </nav>
     </header>
-    <main class="bg-[#F4F7FF] md:container mx-auto mt-3 pb-5">
-        <section class="grid grid-cols-4 gap-4">
+    <main class="bg-[#F4F7FF] mt-3 pb-5">
+        <section class="grid grid-cols-4 gap-4 md:container mx-auto">
             <!-- left section -->
             <section class="col-span-3 bg-white rounded-lg p-6">
                 <!-- boxes section -->
-                <div class="grid grid-cols-4 gap-4 py-4">
+                <div class="grid grid-cols-4 gap-4 py-4 border-b border-dashed border-gray-300">
                     <!-- task Box -->
                     <div class="flex gap-6 items-center bg-[#F4F7FF] p-4 rounded-lg">
                         <div class="border-white bg-white rounded-full p-3">
@@ -52,7 +52,7 @@
                         </div>
                         <div>
                             <p class="text-sm">Task Assigned</p>
-                            <p class="text-2xl font-bold">05</p>
+                            <p class="text-2xl font-bold">0<span id="task-number">6</span></p>
                         </div>
                     </div>
                     <!-- Design Box -->
@@ -81,7 +81,7 @@
                         <div class="mr-38 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
                             <p>ShopEase</p>
                         </div>
-                        <h3 class="text-xl font-medium text-[#00303C]">Fix Mobile Button Issue </h3>
+                        <h3 id="task-name-1" class="text-xl font-medium text-[#00303C]">Fix Mobile Button Issue </h3>
                         <div class="h-16 border-white bg-white p-5 rounded-lg">
                             <p class="text-xs opacity-50 truncate ">Debug using Chrome
                                 <br>DevTools, check for overlapping elements, and ensure
@@ -93,7 +93,7 @@
                                 <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
                                 <p class="text-sm font-medium text-[#00303C]">21 March 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button id="btn-completed-1" class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                     <!-- card-2 -->
@@ -198,8 +198,8 @@
                     </div>
             </section>
             <!-- right section -->
-            <section class="bg-white flex justify-center rounded-lg">
-                <div class="space-y-5 py-10">
+            <section class="bg-white flex flex-col items-center rounded-lg">
+                <div id="activity" class="space-y-5 py-10 px-5">
                     <div class="flex gap-2">
                         <img src="./assets/activity.png" alt="">
                         <p>Activity Log</p>
@@ -211,6 +211,7 @@
 
     </main>
     <script src="./script/utilities.js"></script>
+    <script src="./buttonClick.js"></script>
 </body>
 
 </html>
