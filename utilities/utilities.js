@@ -44,3 +44,17 @@ function time() {
     return time;
 }
 
+function randomInteger(max) {
+    return Math.floor(Math.random()*(max + 1));
+}
+// Outputs a number between 0 and 255 inclusive 
+// console.log(randomInteger(255));
+
+function randomRgb() {
+    let r = randomInteger(255);
+    let g = randomInteger(255);
+    let b = randomInteger(255);
+    const bgColor = "rgb(" + r + "," + g + "," + b + ")";
+    // return [r,g,b];
+    return bgColor;
+}
