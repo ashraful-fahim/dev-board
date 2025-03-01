@@ -124,4 +124,9 @@ const btn6 = document.getElementById('btn-completed-6');
         activity.appendChild(div);
     })
 
+    document.getElementById('btn-blogs')
+    .addEventListener('click', function(){
+        window.location.href = './blog.html';
+    })
+
 

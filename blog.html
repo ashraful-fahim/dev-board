@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,59 @@
         }
     </style>
 </head>
-<body>
+
+<body class="bg-[#F4F7FF] font-poppins">
     <header class="md:container mx-auto py-5">
-        <nav class="flex justify-between bg-white rounded-lg p-3">
+        <nav class="flex items-center justify-between bg-white rounded-lg p-3">
             <img src="./assets/logo.png" alt="logo">
-            <button>Back to Desk</button>
+            <button id="btn-desk" class="btn bg-[#3752FD] text-white rounded-lg">Back to Desk</button>
         </nav>
     </header>
+    <main class="md:container mx-auto py-5">
+        <h1 class="text-2xl font-bold text-center">Blogs</h1>
+        <div class="border-white bg-white rounded-t-lg py-5 pl-4 mt-5">
+            <h3 class="text-lg font-bold">Question-1: What are the different ways to select an element in the DOM?</h3>
+        </div>
+        <p class="border-b border-dashed border-gray-300"></p>
+        <div class="border-white bg-white rounded-b-lg py-5 pl-4">
+            <p class="opacity-60">In Document Object Model (DOM), there are several ways to select elements. Among them the most prominent ones are mentioned below:
+            <br>- getElementById()
+            <br>- getElementsbyClassName()
+            <br>- getElementsByTagName()
+            <br>- querySelectorAll()
+            <br>- querySelector()
+            </p>
+        </div>
+        <div class="border-white bg-white rounded-t-lg py-5 pl-4 mt-5">
+            <h3 class="text-lg font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+        </div>
+        <p class="border-b border-dashed border-gray-300"></p>
+        <div class="border-white bg-white rounded-b-lg py-5 pl-4">
+            <p class="opacity-60">All three of the properties are used to manipulate contents inside tags or a container in the html. Firstly, the innerHTML is different from the other two in the sense that it is used to access the raw html elements along with the text contents by the means of JavaScript. While innerText and textContent work in a more similar fashion. innerText is used to manipulate and access the text contents inside a tag or a html element whereas textContent is used to access not only the text elements but also other hidden elements inside a tag or html content.</p>
+        </div>
+        <div class="border-white bg-white rounded-t-lg py-5 pl-4 mt-5">
+            <h3 class="text-lg font-bold">Question-3: What is event delegation in the DOM?</h3>
+        </div>
+        <p class="border-b border-dashed border-gray-300"></p>
+        <div class="border-white bg-white rounded-b-lg py-5 pl-4">
+            <p class="opacity-60">Event delegation is the phenomenon by which several child elements are controlled by their parent element. This process utilizes the bubbling propagation of the DOM hierarchy. By this process, the developing is made more efficient.</p>
+        </div>
+        <div class="border-white bg-white rounded-t-lg py-5 pl-4 mt-5">
+            <h3 class="text-lg font-bold">Question-4: What is event bubbling in the DOM?</h3>
+        </div>
+        <p class="border-b border-dashed border-gray-300"></p>
+        <div class="border-white bg-white rounded-b-lg py-5 pl-4">
+            <p class="opacity-60">Event bubbling the process of bubbling is up of an event from the targeted element to the root of the DOM tree when being triggered. During this process, the bubbling up triggers all the event listeners in it's way up until the event is stopped individually.</p>
+        </div>
+        <div class="border-white bg-white rounded-t-lg py-5 pl-4 mt-5">
+            <h3 class="text-lg font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+        </div>
+        <p class="border-b border-dashed border-gray-300"></p>
+        <div class="border-white bg-white rounded-b-lg py-5 pl-4">
+            <p class="opacity-60">In JavaScript, elements can be created, added and removed dynamically in various ways. An element can be created using the document.createElement() property. While, appendChild() is used to add a child element to a parent block. Similarly, removeChild() property is used to remove element from it's parent element.</p>
+        </div>
+    </main>
+    <script src="./script/desk.js"></script>
 </body>
+
 </html>
