@@ -132,7 +132,7 @@ document.getElementById('btn-blogs')
 
 document.getElementById('theme')
     .addEventListener('click', function(event){
-        document.getElementById('body').classList.remove()
+        // document.getElementById('body').classList.remove()
         document.getElementById('body').style.backgroundColor = randomRgb();
     })
 
