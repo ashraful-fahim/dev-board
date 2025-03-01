@@ -57,7 +57,7 @@
                     </div>
                     <!-- Design Box -->
                     <div
-                        class="col-span-2 flex items-center gap-5 p-5 bg-linear-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg">
+                        class="col-span-2 flex items-center gap-5 p-5 bg-linear-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg cursor-pointer">
                         <img src="./assets/board.png" alt="">
                         <p class="text-xl font-semibold text-white">Discover Something
                             <br>New Today!
@@ -101,7 +101,7 @@
                         <div class="mr-36 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
                             <p>CloudSync</p>
                         </div>
-                        <h3 class="text-xl font-medium text-[#00303C]">Add Dark Mode</h3>
+                        <h3 id="task-name-2" class="text-xl font-medium text-[#00303C]">Add Dark Mode</h3>
                         <div class="h-16 border-white bg-white p-5 rounded-lg">
                             <p class="text-xs opacity-50 truncate ">Store the user's preference in
                                 <br>localStorage, update CSS variables dynamically, and apply a smooth transition
@@ -113,7 +113,7 @@
                                 <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
                                 <p class="text-sm font-medium text-[#00303C]">15 April 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button id="btn-completed-2" class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                     <!-- card-3 -->
@@ -121,7 +121,7 @@
                         <div class="mr-40 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
                             <p>SwiftPay</p>
                         </div>
-                        <h3 class="text-xl font-medium text-[#00303C]">Optimize Home page</h3>
+                        <h3 id="task-name-3" class="text-xl font-medium text-[#00303C]">Optimize Home page</h3>
                         <div class="h-16 border-white bg-white p-5 rounded-lg">
                             <p class="text-xs opacity-50 truncate ">Make it accessible, mobile-optimized,
                                 <br>SEO-friendly, visually appealing, informative, and conversion-focused with an
@@ -133,7 +133,7 @@
                                 <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
                                 <p class="text-sm font-medium text-[#00303C]">30 May 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button id="btn-completed-3" class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                     <!-- card-4 -->
@@ -141,7 +141,7 @@
                         <div class="mr-46 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
                             <p>Meta</p>
                         </div>
-                        <h3 class="text-xl font-medium text-[#00303C]">Add new emoji 🤲</h3>
+                        <h3 id="task-name-4" class="text-xl font-medium text-[#00303C]">Add new emoji 🤲</h3>
                         <div class="h-16 border-white bg-white p-5 rounded-lg">
                             <p class="text-xs opacity-50 truncate "> Experience more vibrant, expressive,
                                 <br>and inclusive than ever! Connect deeper, express yourself freely, and elevate your
@@ -153,7 +153,7 @@
                                 <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
                                 <p class="text-sm font-medium text-[#00303C]">13 June 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button id="btn-completed-4" class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                     <!-- card-5 -->
@@ -161,7 +161,7 @@
                         <div class="mr-34 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
                             <p>Google LLC</p>
                         </div>
-                        <h3 class="text-xl font-medium text-[#00303C]">Integrate OpenAI API </h3>
+                        <h3 id="task-name-5" class="text-xl font-medium text-[#00303C]">Integrate OpenAI API </h3>
                         <div class="h-16 border-white bg-white p-5 rounded-lg">
                             <p class="text-xs opacity-50 truncate ">Unlocking limitless possibilities!
                                 <br>Supercharge your apps with cutting-edge AI, enhancing user experiences and driving
@@ -173,7 +173,7 @@
                                 <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
                                 <p class="text-sm font-medium text-[#00303C]">30 June 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button id="btn-completed-5" class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                     <!-- card-6 -->
@@ -181,7 +181,7 @@
                         <div class="mr-36 text-sm border-white bg-white text-[#00303C] p-3 rounded-lg">
                             <p>Glassdoor</p>
                         </div>
-                        <h3 class="text-xl font-medium text-[#00303C]">Improve Job searching </h3>
+                        <h3 id="task-name-6" class="text-xl font-medium text-[#00303C]">Improve Job searching </h3>
                         <div class="h-16 border-white bg-white p-5 rounded-lg">
                             <p class="text-xs opacity-50 truncate ">Discover new opportunities
                                 <br>With smarter filters personalized recommendations, and in-depth company insights.
@@ -193,25 +193,30 @@
                                 <p class="text-xs text-[#00303C] opacity-70">Deadline</p>
                                 <p class="text-sm font-medium text-[#00303C]">21 August 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
+                            <button id="btn-completed-6" class="btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                         </div>
                     </div>
             </section>
             <!-- right section -->
             <section class="bg-white flex flex-col items-center rounded-lg">
-                <div id="activity" class="space-y-5 py-10 px-5">
+                <div id="activity" class="space-y-5 py-10 px-5 flex flex-col items-center">
                     <div class="flex gap-2">
                         <img src="./assets/activity.png" alt="">
                         <p>Activity Log</p>
                     </div>
-                    <button class="btn bg-[#3752FD] text-white rounded-lg">Clear History</button>
+                    <div>
+                        <button id="clear-history" class="btn bg-[#3752FD] text-white rounded-lg">Clear History</button>
+                    </div>
+                    <div id="new-elements" class="space-y-5">
+                    </div>
                 </div>
             </section>
         </section>
 
     </main>
-    <script src="./script/utilities.js"></script>
-    <script src="./buttonClick.js"></script>
+    <script src="./utilities/utilities.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="./script/clearHistory.js"></script>
 </body>
 
 </html>
