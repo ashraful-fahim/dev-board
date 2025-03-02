@@ -131,9 +131,15 @@ document.getElementById('btn-blogs')
 
 
 document.getElementById('theme')
-    .addEventListener('click', function(event){
+    .addEventListener('click', function (event) {
         // document.getElementById('body').classList.remove()
         document.getElementById('body').style.backgroundColor = randomRgb();
     })
+
+
+document.addEventListener('DOMContentLoaded', function (event) {
+        // console.log('Page is fully loaded and parsed.');
+        document.getElementById('time').innerText = `${dateTime()}`;
+    });
 
 
